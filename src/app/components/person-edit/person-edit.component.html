@@ -1,0 +1,23 @@
+<form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" />
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input id="age" type="number" formControlName="age" />
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" formControlName="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div>
+      <label for="mobile">Mobile:</label>
+      <input id="mobile" formControlName="mobile" />
+    </div>
+    <button type="submit">Save</button>
+  </form>
+  
